@@ -24,6 +24,7 @@ nav {
 nav a {
     margin: 10px;
     text-decoration: none;
+    color: black;
 }
 
 main {
@@ -51,6 +52,7 @@ button {
     padding: 10px;
     border: none;
     width: 100%;
+    cursor: pointer;
 }
 </style>
 </head>
@@ -66,14 +68,15 @@ button {
 </nav>
 
 <main>
-<form>
-    <h3>Login</h3>
+    <!-- 🔥 AQUI ESTÁ A CORREÇÃO IMPORTANTE -->
+    <form action="admin.html">
+        <h3>Login</h3>
 
-    <input type="text" placeholder="Usuário">
-    <input type="password" placeholder="Senha">
+        <input type="text" placeholder="Usuário" required>
+        <input type="password" placeholder="Senha" required>
 
-    <button>Entrar</button>
-</form>
+        <button type="submit">Entrar</button>
+    </form>
 </main>
 
 <footer>
