@@ -1,0 +1,70 @@
+:root{
+    --cor-fundo: #1e1e2f;
+    --cor-menu: #111827;
+    --cor-card: #374151;
+    --cor-texto: white;
+
+    --fonte-titulo: Georgia, serif;
+    --fonte-texto: Tahoma, sans-serif;
+}
+
+/* GERAL */
+
+body{
+    margin:0;
+    display:flex;
+
+    background: var(--cor-fundo);
+    color: var(--cor-texto);
+
+    font-family: var(--fonte-texto);
+}
+
+/* MENU VERTICAL FIXO */
+
+nav{
+    width:220px;
+    height:100vh;
+
+    background: var(--cor-menu);
+
+    position:fixed;
+}
+
+nav ul{
+    list-style:none;
+    padding:0;
+}
+
+nav li{
+    padding:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+/* CONTEÚDO */
+
+main{
+    margin-left:240px;
+    padding:20px;
+
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+
+    gap:20px;
+}
+
+header{
+    display:none;
+}
+
+/* CARDS */
+
+.card{
+    background: var(--cor-card);
+    padding:20px;
+    border-radius:10px;
+}
